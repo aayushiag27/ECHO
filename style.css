@@ -11,8 +11,7 @@ header {
     position: relative;
     z-index: 1;
 }
-body::before {
-    content: "";
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,16 +26,39 @@ nav {
     z-index: 2;
     padding: 24px 50px;
 }
-
 nav div {
     display: flex;
     justify-content: flex-end;
     gap: 35px;
 }
-
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
+}
+header {
+    position: relative;
+    z-index: 1;
+    min-height: 90vh;
+    text-align: center;
+    padding-top: 80px;
+}
+header h1 {
+    color: #ffffff;
+    font-size: 80px;
+    margin: 0;
+}
+header p {
+    color: #ffffff;
+    font-size: 20px;
+}
+header button {
+    padding: 14px 28px;
+    background: #ff2b2b;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
