@@ -42,7 +42,7 @@ nav a {
 
 nav a:hover,
 .hero-buttons a:hover {
-    color: #ff2b2b;
+    color: red;
 }
 
 header h1 {
@@ -80,7 +80,7 @@ header p {
 }
 
 .hero-buttons button {
-    background: #ff2b2b;
+    background: red;
     color: white;
     border: none;
 }
@@ -133,4 +133,36 @@ nav a:focus-visible,
     .bg-video {
         display: none;
     }
+}
+#schedule {
+    padding: 80px 50px;
+    color: white;
+}
+
+#schedule h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.schedule-list {
+    display: grid;
+    gap: 20px;
+}
+
+.schedule-list article {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    padding: 22px;
+    background: rgba(0, 0, 0, 0.8);
+    border-left: 4px solid red;
+}
+
+.schedule-list time {
+    font-weight: 700;
+}
+
+.schedule-list h3,
+.schedule-list p {
+    margin: 0;
 }
