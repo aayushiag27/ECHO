@@ -1,23 +1,32 @@
-.bg-video {
+body {
+    margin: 0;
+    background: #05051a;
+}
+
+.bg-image {
     position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
     pointer-events: none;
 }
 
-header {
+header,
+main {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+}
+
+header {
     min-height: 90vh;
     padding: 24px 50px;
     text-align: center;
@@ -119,7 +128,7 @@ nav a:focus-visible,
 
 .artists-grid article {
     padding: 30px;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -129,7 +138,6 @@ nav a:focus-visible,
 }
 
 .artists-grid p {
-    font-size: 16px;
     margin: 0;
 }
 
@@ -143,7 +151,7 @@ nav a:focus-visible,
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
     padding: 22px;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.8);
     border-left: 4px solid red;
 }
 
@@ -154,10 +162,4 @@ nav a:focus-visible,
 .schedule-list h3,
 .schedule-list p {
     margin: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .bg-video {
-        display: none;
-    }
 }
