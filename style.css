@@ -97,14 +97,18 @@ nav a:focus-visible,
     outline-offset: 4px;
 }
 
-#artists {
-    padding: 80px 50px;
+#artists,
+#schedule {
+    margin: 0 50px;
+    padding: 70px 40px;
     color: white;
+    background: rgba(0, 0, 0, 0.55);
 }
 
-#artists h2 {
+#artists h2,
+#schedule h2 {
     font-size: 48px;
-    margin-bottom: 40px;
+    margin: 0 0 40px;
 }
 
 .artists-grid {
@@ -115,7 +119,7 @@ nav a:focus-visible,
 
 .artists-grid article {
     padding: 30px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -129,21 +133,6 @@ nav a:focus-visible,
     margin: 0;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .bg-video {
-        display: none;
-    }
-}
-#schedule {
-    padding: 80px 50px;
-    color: white;
-}
-
-#schedule h2 {
-    font-size: 48px;
-    margin-bottom: 40px;
-}
-
 .schedule-list {
     display: grid;
     gap: 20px;
@@ -154,7 +143,7 @@ nav a:focus-visible,
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
     padding: 22px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     border-left: 4px solid red;
 }
 
@@ -165,4 +154,10 @@ nav a:focus-visible,
 .schedule-list h3,
 .schedule-list p {
     margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-video {
+        display: none;
+    }
 }
