@@ -146,25 +146,35 @@ nav a:focus-visible,
     margin: 0;
 }
 
-.schedule-list {
+..schedule-list {
     display: grid;
     gap: 20px;
 }
 
 .schedule-list article {
     display: grid;
-    grid-template-columns: 120px 1fr 1fr;
+    grid-template-columns: 120px 1fr;
     align-items: center;
-    padding: 22px;
+    padding: 22px 25px;
     background: rgba(0, 0, 0, 0.8);
     border-left: 4px solid red;
 }
 
 .schedule-list time {
+    font-size: 18px;
     font-weight: 700;
 }
 
 .schedule-list h3,
 .schedule-list p {
     margin: 0;
+}
+
+.schedule-list h3 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.schedule-list p {
+    font-size: 16px;
 }
