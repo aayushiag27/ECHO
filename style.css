@@ -1,64 +1,86 @@
 .bg-video {
     position: fixed;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-     top: 0;
-    left: 0;
-     z-index: -1;
-}
-header {
-    position: relative;
-    z-index: 1;
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.35);
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
     z-index: 0;
     pointer-events: none;
 }
-nav {
+
+header {
     position: relative;
-    z-index: 2;
+    z-index: 1;
+    min-height: 90vh;
     padding: 24px 50px;
 }
-nav div {
+
+nav {
     display: flex;
     justify-content: flex-end;
+}
+
+nav div {
+    display: flex;
     gap: 35px;
 }
+
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
 }
-header {
-    position: relative;
-    z-index: 1;
-    min-height: 90vh;
-    text-align: center;
-    padding-top: 80px;
+
+nav a:hover {
+    color: #ff2b2b;
 }
+
 header h1 {
-    color: #ffffff;
+    color: white;
     font-size: 80px;
-    margin: 0;
+    margin: 180px 0 0;
+    letter-spacing: 8px;
 }
+
 header p {
-    color: #ffffff;
+    color: white;
     font-size: 20px;
+    margin: 12px 0;
 }
+
 header button {
+    margin-top: 20px;
     padding: 14px 28px;
-    background: #ff2b2b;
-    color: #ffffff;
+    background: red;
+    color: white;
     border: none;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+
+header button:hover {
+    background: white;
+    color: black;
+}
+
+nav a:focus-visible,
+header button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-video {
+        display: none;
+    }
 }
