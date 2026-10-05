@@ -178,3 +178,41 @@ nav a:focus-visible,
 .schedule-list p {
     font-size: 16px;
 }
+#experience {
+    margin: 0 50px;
+    padding: 70px 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+#experience h2 {
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+#experience > p {
+    font-size: 18px;
+    margin: 0 0 40px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.experience-grid article {
+    padding: 35px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.experience-grid h3 {
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+
+.experience-grid p {
+    margin: 0;
+    line-height: 1.6;
+}
