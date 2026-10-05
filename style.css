@@ -84,3 +84,34 @@ header button:focus-visible {
         display: none;
     }
 }
+#artists {
+    padding: 80px 50px;
+    color: #ffffff;
+}
+
+#artists h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.artists-grid article {
+    padding: 30px;
+   background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.artists-grid h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.artists-grid p {
+    font-size: 16px;
+    margin: 0;
+}
