@@ -11,10 +11,11 @@ body {
     object-fit: cover;
     z-index: 0;
 }
+
 .overlay {
     position: fixed;
     inset: 0;
-   background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
     pointer-events: none;
 }
@@ -116,6 +117,11 @@ nav a:focus-visible,
 #artists h2,
 #schedule h2 {
     font-size: 48px;
+    margin: 0 0 10px;
+}
+
+#artists > p {
+    font-size: 18px;
     margin: 0 0 40px;
 }
 
@@ -126,13 +132,13 @@ nav a:focus-visible,
 }
 
 .artists-grid article {
-    padding: 30px;
+    padding: 35px;
     background: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .artists-grid h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin: 0 0 10px;
 }
 
