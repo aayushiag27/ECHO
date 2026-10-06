@@ -3,7 +3,8 @@ body {
     background: #05051a;
 }
 
-.bg-video, .overlay {
+.bg-video,
+.overlay {
     position: fixed;
     inset: 0;
 }
@@ -21,7 +22,8 @@ body {
     pointer-events: none;
 }
 
-header, main {
+header,
+main {
     position: relative;
     z-index: 2;
 }
@@ -32,7 +34,8 @@ header {
     text-align: center;
 }
 
-nav, nav div {
+nav,
+nav div {
     display: flex;
 }
 
@@ -44,7 +47,8 @@ nav div {
     gap: 35px;
 }
 
-nav a, footer nav a {
+nav a,
+footer nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -54,15 +58,28 @@ nav a {
     font-size: 16px;
 }
 
-nav a:hover, footer nav a:hover,
-.hero-buttons a:hover, .tickets-grid a:hover {
+nav a:hover,
+footer nav a:hover,
+.hero-buttons a:hover,
+.tickets-grid a:hover {
     color: red;
+}
+
+.hero-content {
+    margin-top: 130px;
+}
+
+.hero-label {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 600;
 }
 
 header h1 {
     color: white;
     font-size: 80px;
-    margin: 180px 0 0;
+    margin: 20px 0 0;
     letter-spacing: 8px;
 }
 
@@ -70,6 +87,17 @@ header p {
     color: white;
     font-size: 20px;
     margin: 12px 0;
+}
+
+header .festival-name {
+    font-size: 18px;
+    margin: 5px 0 14px;
+}
+
+.hero-date {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 .hero-buttons {
@@ -88,37 +116,66 @@ header p {
     text-decoration: none;
 }
 
-nav a:focus-visible, .hero-buttons a:focus-visible,
-.tickets-grid a:focus-visible, footer nav a:focus-visible {
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+nav a:focus-visible,
+.hero-buttons a:focus-visible,
+.tickets-grid a:focus-visible,
+footer nav a:focus-visible {
     outline: 3px solid white;
     outline-offset: 4px;
 }
 
-#artists, #schedule, #experience, #tickets, #venue {
+#artists,
+#schedule,
+#experience,
+#tickets,
+#venue {
     margin: 0 50px;
     padding: 70px 40px;
     color: white;
     background: rgba(0, 0, 0, 0.55);
 }
 
-#artists h2, #schedule h2, #experience h2,
-#tickets h2, #venue h2 {
+#artists h2,
+#schedule h2,
+#experience h2,
+#tickets h2,
+#venue h2 {
     font-size: 48px;
     margin: 0 0 10px;
 }
 
-#artists > p, #schedule > p, #experience > p,
-#tickets > p, #venue > p {
+#artists > p,
+#schedule > p,
+#experience > p,
+#tickets > p,
+#venue > p {
     font-size: 18px;
     margin: 0 0 40px;
 }
 
-.artists-grid, .experience-grid, .tickets-grid, .venue-content {
+.artists-grid,
+.experience-grid,
+.tickets-grid,
+.venue-content {
     display: grid;
     gap: 25px;
 }
 
-.artists-grid, .experience-grid, .tickets-grid {
+.artists-grid,
+.experience-grid,
+.tickets-grid {
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -126,21 +183,27 @@ nav a:focus-visible, .hero-buttons a:focus-visible,
     grid-template-columns: repeat(2, 1fr);
 }
 
-.artists-grid article, .experience-grid article,
-.tickets-grid article, .venue-content div {
+.artists-grid article,
+.experience-grid article,
+.tickets-grid article,
+.venue-content div {
     padding: 35px;
     background: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.artists-grid h3, .experience-grid h3,
-.tickets-grid h3, .venue-content h3 {
+.artists-grid h3,
+.experience-grid h3,
+.tickets-grid h3,
+.venue-content h3 {
     font-size: 26px;
     margin: 0 0 10px;
 }
 
-.artists-grid p, .experience-grid p,
-.tickets-grid p, .venue-content p {
+.artists-grid p,
+.experience-grid p,
+.tickets-grid p,
+.venue-content p {
     margin: 0;
     line-height: 1.6;
 }
@@ -164,7 +227,8 @@ nav a:focus-visible, .hero-buttons a:focus-visible,
     font-weight: 700;
 }
 
-.schedule-list h3, .schedule-list p {
+.schedule-list h3,
+.schedule-list p {
     margin: 0;
 }
 
@@ -218,9 +282,29 @@ footer nav {
         padding: 20px;
     }
 
+    .hero-content {
+        margin-top: 100px;
+    }
+
     header h1 {
         font-size: 55px;
-        margin-top: 150px;
+        margin-top: 20px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero-date {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero-stats {
+        gap: 8px;
+        font-size: 10px;
+        letter-spacing: 1px;
     }
 
     nav div {
@@ -228,13 +312,19 @@ footer nav {
         flex-wrap: wrap;
     }
 
-    #artists, #schedule, #experience, #tickets, #venue {
+    #artists,
+    #schedule,
+    #experience,
+    #tickets,
+    #venue {
         margin: 0 15px;
         padding: 50px 20px;
     }
 
-    .artists-grid, .experience-grid,
-    .tickets-grid, .venue-content {
+    .artists-grid,
+    .experience-grid,
+    .tickets-grid,
+    .venue-content {
         grid-template-columns: 1fr;
     }
 
