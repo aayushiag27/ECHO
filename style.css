@@ -1,65 +1,60 @@
+```css
 body {
     margin: 0;
-    background: #05051a;
-}
-
-.bg-video,
-.overlay {
-    position: fixed;
-    inset: 0;
+    background: black;
+    font-family: Arial, sans-serif;
 }
 
 .bg-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    pointer-events: none;
 }
 
 header,
-main {
+main,
+footer {
     position: relative;
-    z-index: 2;
+    color: white;
 }
 
 header {
     min-height: 90vh;
-    padding: 24px 50px;
+    padding: 25px 50px;
     text-align: center;
 }
 
-nav,
-nav div {
-    display: flex;
-}
-
 nav {
+    display: flex;
     justify-content: flex-end;
 }
 
 nav div {
-    gap: 35px;
+    display: flex;
+    gap: 30px;
 }
 
 nav a,
-footer nav a {
+footer a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
-}
-
-nav a {
-    font-size: 16px;
+    font-weight: bold;
 }
 
 nav a:hover,
-footer nav a:hover,
+footer a:hover,
 .hero-buttons a:hover,
 .tickets-grid a:hover {
     color: red;
@@ -70,34 +65,28 @@ footer nav a:hover,
 }
 
 .hero-label {
-    color: white;
     font-size: 14px;
     letter-spacing: 4px;
-    font-weight: 600;
 }
 
 header h1 {
-    color: white;
     font-size: 80px;
-    margin: 20px 0 0;
     letter-spacing: 8px;
+    margin: 20px 0;
 }
 
 header p {
-    color: white;
     font-size: 20px;
-    margin: 12px 0;
+    margin: 10px;
 }
 
-header .festival-name {
+.festival-name {
     font-size: 18px;
-    margin: 5px 0 14px;
 }
 
 .hero-date {
     font-size: 14px;
     letter-spacing: 3px;
-    font-weight: 600;
 }
 
 .hero-buttons {
@@ -111,9 +100,8 @@ header .festival-name {
     padding: 14px 28px;
     background: white;
     color: black;
-    font-size: 16px;
-    font-weight: 600;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero-stats {
@@ -121,19 +109,7 @@ header .festival-name {
     justify-content: center;
     gap: 15px;
     margin-top: 35px;
-    color: white;
     font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    opacity: 0.9;
-}
-
-nav a:focus-visible,
-.hero-buttons a:focus-visible,
-.tickets-grid a:focus-visible,
-footer nav a:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 4px;
 }
 
 #artists,
@@ -143,7 +119,6 @@ footer nav a:focus-visible {
 #venue {
     margin: 0 50px;
     padding: 70px 40px;
-    color: white;
     background: rgba(0, 0, 0, 0.55);
 }
 
@@ -153,7 +128,6 @@ footer nav a:focus-visible {
 #tickets h2,
 #venue h2 {
     font-size: 48px;
-    margin: 0 0 10px;
 }
 
 #artists > p,
@@ -162,7 +136,7 @@ footer nav a:focus-visible {
 #tickets > p,
 #venue > p {
     font-size: 18px;
-    margin: 0 0 40px;
+    margin-bottom: 40px;
 }
 
 .artists-grid,
@@ -187,25 +161,22 @@ footer nav a:focus-visible {
 .experience-grid article,
 .tickets-grid article,
 .venue-content div {
-    padding: 35px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .artists-grid h3,
 .experience-grid h3,
 .tickets-grid h3,
 .venue-content h3 {
-    font-size: 26px;
-    margin: 0 0 10px;
+    font-size: 25px;
 }
 
 .artists-grid p,
 .experience-grid p,
 .tickets-grid p,
 .venue-content p {
-    margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .schedule-list {
@@ -216,29 +187,13 @@ footer nav a:focus-visible {
 .schedule-list article {
     display: grid;
     grid-template-columns: 120px 1fr;
-    align-items: center;
-    padding: 22px 25px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.8);
-    border-left: 4px solid red;
-}
-
-.schedule-list time {
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .schedule-list h3,
 .schedule-list p {
     margin: 0;
-}
-
-.schedule-list h3 {
-    font-size: 22px;
-    margin-bottom: 6px;
-}
-
-.tickets-grid p {
-    margin-bottom: 25px;
 }
 
 .tickets-grid a {
@@ -247,23 +202,13 @@ footer nav a:focus-visible {
     background: white;
     color: black;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 footer {
     padding: 50px;
     text-align: center;
-    color: white;
     background: rgba(0, 0, 0, 0.9);
-}
-
-footer h2 {
-    margin: 0;
-    font-size: 32px;
-}
-
-footer p {
-    margin: 10px 0 25px;
 }
 
 footer nav {
@@ -271,48 +216,24 @@ footer nav {
     gap: 25px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .bg-video {
-        display: none;
-    }
-}
-
 @media (max-width: 700px) {
+
     header {
         padding: 20px;
+    }
+
+    header h1 {
+        font-size: 55px;
     }
 
     .hero-content {
         margin-top: 100px;
     }
-
-    header h1 {
-        font-size: 55px;
-        margin-top: 20px;
-    }
-
-    .hero-label {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .hero-date {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .hero-stats {
-        gap: 8px;
-        font-size: 10px;
-        letter-spacing: 1px;
-    }
-
-    nav div {
+ nav div {
         gap: 15px;
         flex-wrap: wrap;
     }
-
-    #artists,
+ #artists,
     #schedule,
     #experience,
     #tickets,
@@ -320,15 +241,14 @@ footer nav {
         margin: 0 15px;
         padding: 50px 20px;
     }
-
-    .artists-grid,
+ .artists-grid,
     .experience-grid,
     .tickets-grid,
     .venue-content {
         grid-template-columns: 1fr;
     }
-
-    footer {
+ footer {
         padding: 40px 20px;
     }
 }
+```
